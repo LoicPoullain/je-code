@@ -6,7 +6,7 @@ Pour installer Django globalement, exécutez la commande suivante :
 pip install django
 ```
 
-**Erreur 1**
+## Erreur 1
 
 Vous obtenez une de ces erreurs:
 
@@ -30,7 +30,7 @@ chemin d'accès est correct et réessayez.
 
 :point_right: [Consultez cette page](regler-les-problemes-de-path.md).
 
-**Erreur 2**
+## Erreur 2
 
 Si vous obtenez l'erreur suivante, relancez votre terminal en mode administrateur (click droit sur l'icône du terminal > choisir "en tant qu'administrateur").
 
