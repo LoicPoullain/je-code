@@ -12,4 +12,5 @@
 
 # Thématiques spécifiques à Django
 
-- [Je n'arrive pas à installer Django](./probleme-installation-django.md)
+- [Je n'arrive pas à installer Django](./probleme-installation-django.md).
+- [Je n'arrive à lancer le serveur Django](./probleme-lancement-serveur-django.md).
