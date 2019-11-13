@@ -81,7 +81,7 @@ TODO
 
 Sur Windows, procédez comme suit :
 
-![variables-environnement-Windows.jpg](https://github.com/LoicPoullain/coding-weeks/blob/master/variables-environnement-Windows.jpg)
+![variables-environnement-Windows.jpg](./assets/variables-environnement-Windows.jpg)
 
 Une nouvelle fenêtre apparaît où vous pouvez alors rentrer une nouvelle ligne avec le nom du répertoire. Cliquez ensuite sur les boutons ok.
 
