@@ -48,11 +48,33 @@ Et maintenant clonez le dépôt dans votre machine (ne le faites pas dans un dos
 
 > git clone l_adresse_de_votre_depot
 
-Un nouveau dossier devrait apparaître avec votre code inclus dedans.
+Un nouveau dossier devrait apparaître avec votre code inclus dedans. Vous pouvez maintenant faire vos commits et "pusher" vos versions sur Gitlab.
 
-> Si vous obtenez l'erreur `Couldn't find ref remote master`, allez sur le Gitlab (dans le navigateur web) et créez un fichier random (par exemple README.md).
+### Erreurs courantes
 
-Vous pouvez maintenant faire vos commits et "pusher" vos versions sur Gitlab.
+#### Echec d'authentification
+
+```
+fatal: Échec d'authentification pour 'https://xxxx/'
+```
+
+Vous utilisez l'URL en HTTPS. Passez pas l'URL SSH :
+
+```bash
+git clone git@xxxx
+```
+
+#### Dépôt non trouvé
+
+```
+fatal: le dépôt 'git@xxxx/' n'existe pas
+```
+
+Enlevez le slash à la fin.
+
+#### Pas de branche master
+
+Si vous obtenez l'erreur `Couldn't find ref remote master`, allez sur le Gitlab (dans le navigateur web) et créez un fichier random (par exemple README.md).
 
 ## Commandes usuelles de Git
 
