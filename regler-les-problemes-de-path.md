@@ -86,3 +86,13 @@ Sur Windows, procédez comme suit :
 Une nouvelle fenêtre apparaît où vous pouvez alors rentrer une nouvelle ligne avec le nom du répertoire. Cliquez ensuite sur les boutons ok.
 
 Vous devrez réouvrir votre terminal pour que les modifications soient prises en compte.
+
+## Problème réglé sur python mais pas pour pip
+
+
+Vérifiez également que `pip` est bien installé (fourni automatiquement avec python):
+```
+pip --version
+```
+
+Si vous obtenez `command not found`, veuillez suivre les étapes détaillées ci-dessus en trouvant le dossier hôte de `pip.exe` (ou `pip`). Généralement, Sous Windows, il s'agit généralement de `C:\Program Files\Python37\Scripts`.
