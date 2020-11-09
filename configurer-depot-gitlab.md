@@ -4,26 +4,33 @@ Ce document explique comment configurer un dépôt Gitlab à plusieurs.
 
 Votre groupe est composé de plusieurs personnes : A et B1, B2, B3, etc.
 
-### Consignes pour la personne A
+## Consignes pour la personne A
 
 Allez sur Gitlab et créez un dépôt si ce n'est pas déjà fait. Le depôt est la "boîte" qui va contenir le code de votre projet. Voici comment faire :
 
 ![./assets/gitlab1.jpg](./assets/gitlab-1.jpg)
 ![./assets/gitlab2.jpg](./assets/gitlab-2.jpg)
 
-Vous allez maintenant ajouter votre binôme et votre enseignant comme collaborateur de votre dépôt. Pour cela, allez sur votre depôt GitLab et choisissez le menu Settings | Members dans la fenêtre de gauche. Ajouter votre binôme et votre enseignant comme collaborateur. Vos collègues seront *Maintainer* et votre enseignant sera Reporter.
+Vous allez maintenant ajouter vos co-équipiers et vos encadrants (Loïc Poullain et Céline Hudelot) comme collaborateur de votre dépôt. Pour cela, allez sur votre depôt GitLab et choisissez le menu Settings | Members dans la fenêtre de gauche. Ajouter vos co-équipiers et vos enseignants comme collaborateurs. Vos collègues seront *Maintainer* et vos enseignants seront *Reporter*.
 
-### Consignes pour toutes les personnes
+## Consignes pour toutes les personnes
 
-Chacun de votre côté va maintenant devoir copier ce dépôt sur votre ordinateur. Ouvrez pour cela un terminal.
+### Créer une paire de clés SSH (RSA)
 
-Vérifiez que git est bien installé en tapant :
+![./assets/ssh-key.jpg](./assets/ssh-key.jpg)
+
+Une fois que vous aurez cliqué sur `generate one`, suivez le tutoriel pour en créer une. Lorsque vous générez la clé, laissez tous les champs vides. Pressez juste "Entrée" à chaque fois.
+
+Vous pouvez ensuite afficher votre clé publique via (attention sur Windows, utilisez le Git bash ou le PowerShell):
 
 ```bash
-git --version
+cat ~/.ssh/id_rsa.pub
 ```
+Copiez-la ensuite dans le grand rectangle.
 
-Le numéro de version de git devrait apparaître. Si vous obtenez `Command not found`, merci de vous reporter à cette [page](./regler-les-problemes-de-path.md).
+### Cloner le dépôt en locale
+
+Chacun de votre côté va maintenant devoir copier le dépôt sur son ordinateur. Ouvrez pour cela un terminal.
 
 Une fois fait, placez-vous dans le dossier (aussi appelé répertoire) où vous voulez créer votre projet (il peut s'agir du bureau, de mes documents, etc).
 
@@ -45,37 +52,13 @@ Un nouveau dossier devrait apparaître avec votre code inclus dedans.
 
 > Si vous obtenez l'erreur `Couldn't find ref remote master`, allez sur le Gitlab (dans le navigateur web) et créez un fichier random (par exemple README.md).
 
-> Si vous obtenez une erreur de certificat (qui sert à crypter vos échanges entre votre ordinateur et Gitlab), vous avez **deux solutions possibles** :
->
-> **Solution 1: désactiver SSL (non recommandé)**
->
-> A la place d'utiliser la commande `git clone`, utilisez ces commandes :
->
-> ```sh
-> mkdir saclaylocal # attention, aucun dossier "saclaylocal" ne doit déjà exister
-> cd saclaylocal
-> git init
-> git remote add origin ladresse_du_depot_qui_commence_par_https
-> git config http.sslVerify false
-> git pull origin master # cela peut prendre un peu de temps
-> ```
->
-> **Solutin 2: créer une paire de clés SSH (une privée et une publique)**
->
-> ![./assets/ssh-key.jpg](./assets/ssh-key.jpg)
->
-> Une fois que vous aurez cliqué sur `generate one`, suivez le tutoriel pour en créer une. Lorsque vous générez la clé, laissez tous les champs vides. Pressez juste "Entrée" à chaque fois.
->
-> Vous pouvez ensuite afficher votre clé publique via (attention sur Windows, utilisez le Git bash ou le PowerShell):
-> ```sh
-> cat ~/.ssh/id_rsa.pub
-> ```
-> Copiez-la ensuite dans le grand rectangle.
-
 Vous pouvez maintenant faire vos commits et "pusher" vos versions sur Gitlab.
 
+## Commandes usuelles de Git
+
+Voici quelques rappels des commandes git les plus courantes
+
 ```sh
-# Voici quelques rappels des commandes git les plus courantes
 git status # afficher les fichiers qui sont sélectionnés pour être commités et ceux qui ne le sont pas.
 git diff # afficher les modifications depuis le dernier commit
 git add my_file_name # ajouter un fichier dans la zone de transit
