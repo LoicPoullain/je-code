@@ -22,4 +22,4 @@ python3 --version
 
 Si cela fonctionne il faudra alors remplacer les commandes `python` et `pip` par `python3` et `pip3` dans tout l'énoncé du TP.
 
-Si cela ne fonctionne pas, c'est que vous installé la version 2 de python. [Installez la 3](https://www.python.org/downloads/).
+Si cela ne fonctionne pas, c'est que vous avez uniquement la version 2 de python. [Installez la 3](https://www.python.org/downloads/).
