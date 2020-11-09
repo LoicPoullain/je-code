@@ -10,11 +10,11 @@
 
 - [Régler les problèmes de `PATH`](./regler-les-problemes-de-path.md) -> pour les erreurs du type `n'est pas reconnu en tant que commande interne` ou `command not found`.
 
-# Git & Gitlab
+## Git & Gitlab
 
 - [Configurer un dépôt Gitlab à plusieurs](./configurer-depot-gitlab.md)
 
-# Thématiques spécifiques à Django
+## Thématiques spécifiques à Django
 
 - [Je n'arrive pas à installer Django](./probleme-installation-django.md).
 - [Je n'arrive pas à lancer le serveur Django](./probleme-lancement-serveur-django.md).
