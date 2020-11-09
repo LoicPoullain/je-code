@@ -1,4 +1,4 @@
-# Connaître sa version de python
+# Connaître sa version de python et utiliser python 3
 
 Pour connaître votre version de python, tapez la commande suivante dans un terminal :
 

@@ -2,7 +2,7 @@
 
 ## Tutoriaux
 
-- [Connaître sa version de python](./connaitre-sa-version-de-python.md).
+- [Connaître sa version de python et utiliser python 3](./connaitre-sa-version-de-python.md).
 - [Terminologie et présentation des technos](./terminologie-et-presentation-des-technos.md) -> c'est quoi Git, Gitlab, Github, VSCode, python, pip et django ?
 - [Utiliser Visual Studio Code (VSCode)](./utiliser-visual-studio-code.md).
 
