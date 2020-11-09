@@ -4,7 +4,7 @@
 
 *Gitlab* et *Github* sont des plateformes web collaboratives qui s'appuient sur Git. C'est par Gitlab qui vous stockerez votre code à distance et que votre binôme et le correcteur y auront accès.
 
-*Visual Studio Code (VSCode)* et *PyCharm* sont des éditeurs de code.
+*Visual Studio Code (VSCode)* est un éditeur de code.
 
 *Python* est le langage de programmation utilisé lors de ce cours. Nous travaillons sur la version 3 (pas la 2).
 
