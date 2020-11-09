@@ -12,7 +12,7 @@
 
 ## Git & Gitlab
 
-- [Configurer un dépôt Gitlab à plusieurs](./configurer-depot-gitlab.md)
+- [Configurer un dépôt Gitlab à plusieurs](./configurer-depot-gitlab.md).
 
 ## Thématiques spécifiques à Django
 
