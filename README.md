@@ -10,11 +10,12 @@
 ## Git & Gitlab
 
 - [Configurer un dépôt Gitlab à plusieurs](./configurer-depot-gitlab.md).
+- [Ignorer des fichiers (ajout d'un `.gitignore`)](./ajout-gitignore.md). -> utile notamment pour gérer les conflits sur les dossiers `__pycache__` ou sur la base de données.
 
 ## Python & Django
 
 - [J'obtiens une `invalid syntax` lorsque j'exécute une commande](./invalid-syntax.md).
-- [Ma commande `django-admin` n'est pas reconnue](./django-admin-pas-reconnue.md)
+- [Ma commande `django-admin` n'est pas reconnue](./django-admin-pas-reconnue.md).
 - [Connaître sa version de python et utiliser python 3](./connaitre-sa-version-de-python.md).
 - [Je n'arrive pas à installer Django](./probleme-installation-django.md).
 - [Je n'arrive pas à lancer le serveur Django](./probleme-lancement-serveur-django.md).
