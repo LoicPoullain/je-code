@@ -13,6 +13,7 @@
 
 ## Python & Django
 
+- [J'obtiens une `invalid syntax` lorsque j'exécute une commande](./invalid-syntax.md).
 - [Connaître sa version de python et utiliser python 3](./connaitre-sa-version-de-python.md).
 - [Je n'arrive pas à installer Django](./probleme-installation-django.md).
 - [Je n'arrive pas à lancer le serveur Django](./probleme-lancement-serveur-django.md).
