@@ -2,10 +2,11 @@
 
 Il y a un certain nombre de fichiers que nous ne souhaitons pas *commiter* car ils n'ont pas besoin d'être partagés et peuvent générer des conflits le cas échéant.
 
-Il s'agit généralement des fichiers de cache ou de la base de données SQLite:
+Il s'agit généralement des fichiers de cache, de ceux gérant l'environnement virtuel ou de la base de données SQLite:
 - `.DS_Store`
 - `*.pyc`
 - `db.sqlite3`
+- `venv`
 
 Ces fichiers peuvent être ignorés par défaut en ajoutant un fichier `.gitignore`.
 
@@ -18,6 +19,7 @@ Ajoutez un fichier `.gitignore` avec le contenu ci-dessous et commitez-le.
 __pycache__
 *.pyc
 db.sqlite3
+venv
 ```
 
 ## Cas 2 : vous avez déjà commité ces fichiers.
